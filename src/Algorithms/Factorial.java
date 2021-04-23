@@ -4,6 +4,7 @@ import java.util.*;
 public class Factorial {
     public static void main(String[] args) {
 
+        //TODO: couldn't add result for value 0.
         for (int n = 1; n <= 10; n++) {
             System.out.println(factorial(n));
         }
