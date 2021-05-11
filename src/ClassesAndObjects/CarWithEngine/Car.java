@@ -1,40 +1,27 @@
 package ClassesAndObjects.CarWithEngine;
 
 public class Car {
-    private String name;
-    private Engine engine;
+    private String carMakeAndModel;
+    public String getCarMakeAndModel() {return carMakeAndModel;}
+    public void setCarMakeAndModel(String make) {this.carMakeAndModel = make;}
+
+    private String engine;
+    public String getEngine() {return engine;}
+    public void setEngine(String engine) {this.engine = engine;}
+
+//*************************************************************************
     private int fuelTankCapacity;
-    private int remainingFuelAmount;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEngine() {
-        return getName();
-    }
-
-    public void setEngine(String engine) {
-
-    }
-
-    public int getFuelTankCapacity() {
-        return fuelTankCapacity;
-    }
-
+    public int getFuelTankCapacity() {return fuelTankCapacity;}
     public void setFuelTankCapacity(int fuelTankCapacity) {
         this.fuelTankCapacity = fuelTankCapacity;
     }
 
-    public int getRemainingFuelAmount() {
-        return remainingFuelAmount;
-    }
+//*************************************************************************
+    private int remainingFuel;
 
-    public void setRemainingFuelAmount(int remainingFuelAmount) {
-        this.remainingFuelAmount = remainingFuelAmount;
+    public int getRemainingFuel() {return remainingFuel;}
+    public void setRemainingFuel(int remainingFuel) {
+        this.remainingFuel = remainingFuel;
     }
 }

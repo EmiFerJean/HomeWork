@@ -3,30 +3,35 @@ package ClassesAndObjects.CarWithEngine;
 public class Engine {
     private String name;
     private int horsePower;
-    private int capacity;
+    private int engineCubicCM;
     private boolean started;
-
-    public Engine (String name, int horsePower, int capacity) {
+    //*************************************************************************
+    public Engine (String name, int horsePower, int engineCubicCM) {
         this.name = name;
         this.horsePower = horsePower;
-        this.capacity = capacity;
+        this.engineCubicCM = engineCubicCM;
         this.started = false;
     }
-
+    //*************************************************************************
     public void start () {
         started = true;
+        System.out.println("The engine is on.");
     }
+    //*************************************************************************
     public void stop () {
         started = false;
+        System.out.println("The engine is off.");
     }
+    //*************************************************************************
     public int getMaximumSpeed () {
         return horsePower*2;
     }
+    //*************************************************************************
     public double fuelConsumed (int distance) {
-        double capacityLiters = capacity/1000.0;
-        return capacityLiters*10;
+        double tankCapacity = engineCubicCM /1000.0;
+        return tankCapacity*10;
     }
-
+    //*************************************************************************
     public String getName() {
         return name;
     }
@@ -35,8 +40,8 @@ public class Engine {
         return horsePower;
     }
 
-    public int getCapacity() {
-        return capacity;
+    public int getEngineCubicCM() {
+        return engineCubicCM;
     }
 
     public boolean isStarted() {

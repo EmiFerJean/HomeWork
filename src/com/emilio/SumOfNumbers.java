@@ -9,9 +9,9 @@ public class SumOfNumbers {
         System.out.println("Type a number:");
         String str = inputNumber.nextLine();
 
-        double dnum = Double.parseDouble(str);
-        dnum = Integer.parseInt(args[0]);
-        System.out.println(dnum);
+        double num = Double.parseDouble(str);
+        num = Integer.parseInt(args[0]);
+        System.out.println(num);
 
 //Converting String into int using Integer.parseInt()
 //        System.out.println(s+100);//200100, because "200"+100, here + is a string concatenation operator
